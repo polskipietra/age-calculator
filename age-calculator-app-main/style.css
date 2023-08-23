@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: hsl(0, 0%, 94%);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+}
+main {
+	background-color: hsl(0, 0%, 100%);
+	max-width: 60vw;
+	max-height: 75vh;
+	padding: 50px;
+	border-radius: 20px 20px 200px 20px;
+}
+.user-input {
+	position: relative;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 200px;
+}
+.input-essentials {
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: hsl(0, 1%, 44%);
+}
+.label-month {
+	margin: 0 50px;
+}
+input {
+	border: 1px solid hsl(0, 0%, 86%);
+	width: 150px;
+	/* height: 60px; */
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 32px;
+	font-weight: bold;
+	color: black;
+}
+.error-message {
+	opacity: 0;
+}
+.error{
+	width: 160px;
+	position: absolute;
+	opacity: 100 !important;
+	color: red;
+	
+}
+.separation {
+	position: relative;
+	top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.horizontal-line {
+	position: relative;
+	height: 2px;
+	width: 85%;
+	background-color: hsl(0, 0%, 94%);
+}
+.calculated-info {
+	position: relative;
+	top: 30px;
+}
+.calc-button {
+	width: 100px;
+	height: 100px;
+	background-color: hsl(259, 100%, 65%);
+	border-color: hsl(259, 100%, 65%);
+	border-radius: 100%;
+	cursor: pointer;
+	z-index: 42069;
+}
+.calc-button:hover {
+	background-color: black;
+	border-color: black;
+}
+ul {
+	list-style: none;
+}
+li {
+	font-size: 6rem;
+	font-weight: 900;
+}
+.calc {
+	color: hsl(259, 100%, 65%);
+}
+input:hover {
+	border-color: hsl(259, 100%, 65%);
+}
+
+
+@media (max-width: 500px){
+	main{
+		width: 100%;
+		height: 60vh;
+		max-width: none;
+		max-height: none;
+		padding: 30px 20px 20px 20px;
+	}
+	input{
+		width: 90px;
+		height: 50px;
+		font-size: 20px;
+		padding: 10px;
+		align-items: center;
+	}
+	.calc-button{
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	li{
+		font-size: 3rem;
+	}
+	.label-month{
+		margin: 0, 20px;
+	}
+	.horizontal-line{
+		width: 95%;
+	}
+	.separation{
+		top: 80px;
+	}
+	.calculated-info{
+		top: 150px;
+	}
+	.error{
+		width: 100px;
+	}
+}
